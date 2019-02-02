@@ -30,7 +30,7 @@
        </section>
       <!-- It is not necessary to do on lesson 2 -->
        <section class = "features">
-      
+
        </section>
        <section class = "booking">
           <h2>Заинтересовались?</h2>
@@ -38,21 +38,51 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="button" href="">Поиск гостиницы в седоне</a>
         </section>
-        <!-- It is not necessary to do on lesson 2 -->
+        <section class="searching-hotels">
+          <h3 class="visually-hidden">Параметры поиска гостиницы</h3>
+          <form class="searching-form" method="post" action="https://echo.htmlacademy.ru">
+            <p class="searching-item">
+              <label class="searching-form-label" for="searching-arrival">Дата заезда:</label>
+              <input type="text" id="searching-arrival" name="arrival" placeholder="24 апреля 2017" >
+              <!-- Прочитала, что картинку лучше вставить через СSS -->
+              <button id="searching-form-calendar" aria-label="Календарь"></button>
+            </p>
+            <p class="searching-item">
+              <label class="searching-form-label" for="searching-depature">Дата выезда:</label>
+              <input type="text" id="searching-depature" name="depature" placeholder="4 июля 2017" >
+                <button id="searching-form-calendar" aria-label="Календарь"></button>
+            </p>
+            <p class="searching-item">
+              <label class="searching-form-label" for="searching-adult">Взрослые:</label>
+              <input type="text" id="searching-adult" name="adult" placeholder="2" >
+              <button id="searching-form-minus" aria-label="Уменьшить"></button>
+              <button id="searching-form-plus" aria-label="Увеличить"></button>
+            </p>
+            <p class="searching-item">
+              <label class="searching-form-label" for="searching-children">Дети:</label>
+              <input type="text" id="searching-children" name="children" placeholder="0" >
+              <button id="searching-form-minus" aria-label="Уменьшить"></button>
+              <button id="searching-form-plus" aria-label="Увеличить"></button>
+            </p>
+            <p class="searching-item">
+              <button class="form-button" type="submit" aria-label="Найти">Найти</button>
+            </p>
+          </form>
+        </section>
          <section class = "map">
-           <img src="img/map.jpg" width="1573" height="724" alt="Карта"
+           <img src="img/map.jpg" width="1573" height="724" alt="Город находится в штате Аризона, США"
          </section>
      </main>
      <footer class="main-footer">
        <p>#visitsedona</p>
        <ul>
-         <li><a class="social-media" href="#">Twitter</a></li>
-         <li><a class="social-media" href="#">Facebook</a></li>
-         <li><a class="social-media" href="#">Youtube</a></li>
+         <li><a class="social-media" href="#"  aria-label="Ссылка на Twitter г. Седона">Twitter</a></li>
+         <li><a class="social-media" href="#" aria-label="Ссылка на Facebook г.Седона">Facebook</a></li>
+         <li><a class="social-media" href="#" aria-label="Ссылка на Youtube канал г. Седона ">Youtube</a></li>
        </ul>
        <p>
          <b>website by</b>
-         <a class="copyright" href="https://htmlacademy.ru">
+         <a class="copyright" href="https://htmlacademy.ru" aria-label="Ссылка на сайт HTML-академии">
            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-академии">
          </a>
        </p>
