@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	   <header class="main-header">
@@ -44,25 +47,24 @@
             <p class="searching-item">
               <label class="searching-form-label" for="searching-arrival">Дата заезда:</label>
               <input type="text" id="searching-arrival" name="arrival">
-              <!-- Прочитала, что картинку лучше вставить через СSS -->
-              <button type="button" id="searching-form-calendar" aria-label="Календарь"></button>
+              <button type="button" id="searching-form-calendar" class="arrival-button" aria-label="Календарь"></button>
             </p>
             <p class="searching-item">
               <label class="searching-form-label" for="searching-depature">Дата выезда:</label>
               <input type="text" id="searching-depature" name="depature">
-                <button type="button" id="searching-form-calendar" aria-label="Календарь"></button>
+                <button type="button" id="searching-form-calendar" class="depature-button" aria-label="Календарь"></button>
             </p>
             <p class="searching-item">
               <label class="searching-form-label" for="searching-adult">Взрослые:</label>
               <input  type="text" id="searching-adult" name="adult" placeholder="2" >
-              <button type="button" id="searching-form-minus" aria-label="Уменьшить"></button>
-              <button type="button" id="searching-form-plus" aria-label="Увеличить"></button>
+              <button type="button" id="searching-form-minus" class="minus" aria-label="Уменьшить"></button>
+              <button type="button" id="searching-form-plus" class="plus" aria-label="Увеличить"></button>
             </p>
             <p class="searching-item">
               <label class="searching-form-label" for="searching-children">Дети:</label>
               <input  type="text" id="searching-children" name="children" placeholder="0" >
-              <button type="button" id="searching-form-minus" aria-label="Уменьшить"></button>
-              <button type="button" id="searching-form-plus" aria-label="Увеличить"></button>
+              <button type="button" id="searching-form-minus" class="minus" aria-label="Уменьшить"></button>
+              <button type="button" id="searching-form-plus" class="plus" aria-label="Увеличить"></button>
             </p>
             <p class="searching-item">
               <button class="form-button" type="submit" aria-label="Найти">Найти</button>
@@ -74,13 +76,13 @@
          </section>
      </main>
      <footer class="main-footer">
-       <p>#visitsedona</p>
+       <p class="teg-visit">#visitsedona</p>
        <ul>
          <li><a class="social-media" href="#"  aria-label="Ссылка на Twitter г. Седона">Twitter</a></li>
          <li><a class="social-media" href="#" aria-label="Ссылка на Facebook г.Седона">Facebook</a></li>
          <li><a class="social-media" href="#" aria-label="Ссылка на Youtube канал г. Седона ">Youtube</a></li>
        </ul>
-       <p>
+       <p class="link-academy">
          <b>website by</b>
          <a class="copyright" href="https://htmlacademy.ru" aria-label="Ссылка на сайт HTML-академии">
            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-академии">

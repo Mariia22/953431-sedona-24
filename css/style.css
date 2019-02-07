@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+.main-navigation{
+  font-weight: bold;
+}
+.site-navigation{
+  list-style: none;
+}
+.site-navigation a{
+  color: #000000;
+}
+.site-navigation a:hover{
+  color: #cadeeb;
+}
+.site-navigation a:active{
+  color: #e7e7e7;
+}
+.site-navigation-current a{
+  color: #766357;
+}
+.welcome-foto{
+  background-image: url("../img/welcome.jpg");
+  background-image: url("../img/intro-welcome.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.welcome-text{
+  text-align: center;
+}
+h1{
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.rating-score{
+  background-color: #f2f2f2;
+}
+.booking{
+  text-align: center;
+}
+.button{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+.button:hover{
+  background-color: #604e43;
+  color: #eeedec;
+}
+.button:active {
+  background-color: #503e33;
+  color: #827872;
+}
+.info-button{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+}
+.info-button:hover{
+  background-color: #669ec0;
+  color: #cbdbe7;
+}
+.info-button:active{
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+.book-button{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+.book-button:hover{
+  background-color: #604e43;
+  color: #eeedec;
+}
+.book-button:active {
+  background-color: #503e33;
+  color: #827872;
+}
+.searching-hotels{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.searching-hotels input[type="text"]{
+  font:inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+.searching-hotels input[type="text"]:hover{
+  background-color: #ebebeb;
+  border: none;
+}
+.searching-hotels input[type="text"]:active{
+  background-color: #ffffff;
+  border: 2px solid #ebebeb;
+}
+
+.arrival-button,
+.depature-button{
+  background-image: url("../img/calendar.svg");
+  }
+
+.searching-hotels button{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.searching-hotels button:hover{
+  background-color: #669ec0;
+  color: #cbdbe7;
+}
+.searching-hotels button:active{
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+.teg-visit{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.main-footer ul{
+  list-style: none;
+
+}
+.main-footer ul:hover{
+  background-color: #669ec0;
+  color: #ffffff;
+}
+.main-footer ul:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.link-academy{
+  font-size: 14px;
+  line-height: 26px;
+}
+.link-academy img:hover{
+  background-color: #98c1da;
+}
+.link-academy img:active {
+  background-color: #bdbbbc;
+}
