@@ -21,9 +21,6 @@ a{
   text-decoration: none;
 }
 .main-navigation{
-  margin: 0 auto;
-  padding: 0;
-  width: 1200px;
   font-weight: bold;
   background-color: #ffffff;
   position:relative;
@@ -209,7 +206,7 @@ a{
 .catalog-item{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #e5e5e5;
   padding: 30px 73px 30px 73px;
 }
 .catalog-item:last-child{
@@ -218,7 +215,6 @@ a{
 .hotel-description{
   display: flex;
   justify-content: space-between;
-
 }
 .hotel-item{
   margin-left: 30px;
@@ -276,9 +272,6 @@ a{
   position: relative;
 }
 .main-footer{
- margin: 0 auto;
- padding: 0;
- width: 1200px;
  padding: 37px 0;
  background-color: #ffffff;
 }
