@@ -14,17 +14,17 @@
            <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Sedona">
          </a>
          <ul class="site-navigation">
-           <li class="site-navigation-left"><a href="info.html">Информация</a></li>
-           <li class="site-navigation-left"><a href="multimedia.html">Фото и видео</a></li>
-           <li class="site-navigation-right" ><a href="map.html">Карта штата</a></li>
-           <li class="site-navigation-right"><a href="inner.html">Гостиницы</a></li>
+           <li><a href="info.html">Информация</a></li>
+           <li><a href="multimedia.html">Фото и видео</a></li>
+           <li><a href="map.html">Карта штата</a></li>
+           <li><a href="inner.html">Гостиницы</a></li>
          </ul>
        </nav>
      </header>
      <main class="container shadow">
        <section class = "welcome-foto"></section>
        <section class = "welcome-text">
-         <h1 class="welcome-name">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+         <h1 class="welcome-name">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h1>
          <p class="welcome-reason">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
        </section>
        <section class = "features">
@@ -35,47 +35,40 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="find-button" href="">Поиск гостиницы в седоне</a>
         </section>
-        <section class="searching-hotels">
+        <section class = "map">
           <h3 class="visually-hidden">Параметры поиска гостиницы</h3>
           <form class="searching-form" method="post" action="https://echo.htmlacademy.ru">
-            <p class="searching-item">
+            <div class="data-hotel">
               <label class="searching-form-label" for="searching-arrival">Дата заезда:</label>
               <input type="text" id="searching-arrival" name="arrival">
               <button type="button" id="searching-form-calendar" class="arrival-button" aria-label="Календарь">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                 </svg>
               </button>
-            </p>
-            <p class="searching-item">
               <label class="searching-form-label" for="searching-depature">Дата выезда:</label>
               <input type="text" id="searching-depature" name="depature">
                 <button type="button" id="searching-form-calendar" class="depature-button" aria-label="Календарь">
                   <svg  xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                   </svg>
                 </button>
-            </p>
-            <p class="searching-item">
+          </div>
+            <div class="amount">
               <label class="searching-form-label" for="searching-adult">Взрослые:</label>
+              <button type="button" id="searching-form-minus" class="minus-adult" aria-label="Уменьшить"></button>
               <input  type="text" id="searching-adult" name="adult" placeholder="2" >
-              <button type="button" id="searching-form-minus" class="minus" aria-label="Уменьшить"></button>
-              <button type="button" id="searching-form-plus" class="plus" aria-label="Увеличить"></button>
-            </p>
-            <p class="searching-item">
+              <button type="button" id="searching-form-plus" class="plus-adult" aria-label="Увеличить"></button>
               <label class="searching-form-label" for="searching-children">Дети:</label>
+              <button type="button" id="searching-form-minus" class="minus-children" aria-label="Уменьшить"></button>
               <input  type="text" id="searching-children" name="children" placeholder="0" >
-              <button type="button" id="searching-form-minus" class="minus" aria-label="Уменьшить"></button>
-              <button type="button" id="searching-form-plus" class="plus" aria-label="Увеличить"></button>
-            </p>
-            <p class="searching-item">
+              <button type="button" id="searching-form-plus" class="plus-children" aria-label="Увеличить"></button>
+            </div>
               <button class="form-button" type="submit" aria-label="Найти">Найти</button>
-            </p>
           </form>
         </section>
-         <section class = "map">
-           <img src="img/map.jpg" width="1200" height="594" alt="Город находится в штате Аризона, США">
+           <img src="img/map.jpg" width="1200" height="596" alt="Город находится в штате Аризона, США">
          </section>
      </main>
-     <footer class=" container main-footer home-footer">
+     <footer class="container main-footer home-footer">
        <div class="foot-container">
        <p class="teg-visit">#visitsedona</p>
        <ul class="social">

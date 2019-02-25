@@ -8,29 +8,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-	   <header class="container main-header">
-       <nav class="main-navigation">
-         <a class="main-header-logo" href="index.html">
-           <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Sedona">
-         </a>
-         <ul class="site-navigation">
-           <li><a href="info.html">Информация</a></li>
-           <li><a href="multimedia.html">Фото и видео</a></li>
-           <li><a href="map.html">Карта штата</a></li>
+    <header class=" container main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Sedona">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="multimedia.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
            <li class="site-navigation-current"><a href="inner.html">Гостиницы</a></li>
          </ul>
        </nav>
      </header>
      <main class="container shadow">
+       <section class="filter"></section>
+       <div class="result-filter"></div>
        <section class="catalog">
          <ul class="catalog-list">
            <li class="catalog-item">
              <div class="hotel-description">
              <img class="hotel-foto" src="img/hotel-1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
               <div class="hotel-item">
-             <h3 class="hotel-name">amara resort & spa</h3>
+             <a class="hotel-name" href="amara.html">amara resort & spa</a>
+             <br>
              <span class="type-hotel">Гостиница</span>
-             <span class="price">от 4000</span>
+             <span class="price">от 4000 Р.</span>
               <p class="info-hotel">
                   <a class="info-button" href="">Подробнее</a>
                   <a class="book-button" href="">Забронировать</a>
@@ -38,10 +41,12 @@
               </div>
               </div>
              <div class="rating">
+               <div class="raiting-stars">
                 <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
                 <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
                 <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
                 <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
+              </div>
                 <span class="rating-score">Рейтинг:
                   <span class="rating-number">8.5</span>
                 </span>
@@ -52,9 +57,10 @@
              <div class="hotel-description">
             <img class="hotel-foto" src="img/hotel-2.jpg" width="135" height="90" alt="DESERT Quail INN">
              <div class="hotel-item">
-            <h3 class="hotel-name">desert quail inn</h3>
+            <a class="hotel-name" href="desert.html">desert quail inn</a>
+            <br>
             <span class="type-hotel">Мотель</span>
-            <span class="price">от 3000</span>
+            <span class="price">от 3000 Р.</span>
             <p class="info-hotel">
               <a class="info-button" href="">Подробнее</a>
               <a class="book-button" href="">Забронировать</a>
@@ -62,11 +68,13 @@
           </div>
              </div>
             <div class="rating">
+              <div class="raiting-stars">
                <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
                <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
                <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
+             </div>
                <span class="rating-score">Рейтинг:
-                 <span class="rating-number">8.9</span>
+                <span class="rating-number">8.9</span>
                </span>
             </div>
          </li>
@@ -74,9 +82,10 @@
         <div class="hotel-description">
           <img class="hotel-foto" src="img/hotel-3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
            <div class="hotel-item">
-           <h3 class="hotel-name">villas at poco diablo</h3>
+          <a class="hotel-name" href="diablo.html">villas at poco diablo</a>
+          <br>
            <span class="type-hotel">Апартаменты</span>
-           <span class="price">от 2000</span>
+           <span class="price">от 2000 Р.</span>
            <p class="info-hotel">
              <a class="info-button" href="">Подробнее</a>
              <a class="book-button" href="">Забронировать</a>
@@ -84,8 +93,10 @@
          </div>
          </div>
            <div class="rating">
+             <div class="raiting-stars">
              <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
              <img src="img/star.svg" width="20" height="20" alt="Звезда рейтинга">
+           </div>
               <span class="rating-score">Рейтинг:
                 <span class="rating-number">9.2</span>
               </span>
