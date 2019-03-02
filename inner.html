@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class=" container main-header">
+    <header class="container main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Sedona">
@@ -22,8 +22,50 @@
        </nav>
      </header>
      <main class="container shadow">
-       <section class="filter"></section>
-       <div class="result-filter"></div>
+       <section class="filter">
+          <h1 class="visually-hidden">Фильтр гостиниц</h1>
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="filter-item">
+            <h2>инфраструктура:</h2>
+            <label class="filter-check" for="basen">Бассейн</label>
+            <input type="checkbox" id="basen" name="basen">
+            <label class="filter-check" for="parking">Парковка</label>
+            <input type="checkbox" id="parking" name="parking">
+            <label class="filter-check" for="wifi">Wifi</label>
+            <input type="checkbox" id="wifi" name="wifi">
+          <div>
+            <div class="filter-house">
+              <h2>тип жилья:</h2>
+              <label class="filter-check" for="hotel">Гостиница</label>
+              <input type="checkbox" id="hotel" name="hotel">
+              <label class="filter-check" for="motel">Мотель</label>
+              <input type="checkbox" id="motel" name="motel">
+              <label class="filter-check" for="flat">Апартаменты</label>
+              <input type="checkbox" id="flat" name="flat">
+            <div>
+              <div class="filter-price">
+                <h2>стоимость в сутки (р):</h2>
+              <button type="button" id="filter-cena" class="button-filter-price"aria-label="Отобрать гостиницы по цене">Показать</button>
+              <div>
+        </form>
+       </section>
+       <section class="result-filter">
+         <div class="result">
+           <span>найдено:3</span>
+        </div>
+        <div class="result-sort">
+         <span>Cортировка</span>
+         <ul class="sort">
+           <li><a class="active">по цене</a></li>
+           <li><a class="active">по типу</a></li>
+           <li><a class="active">по рейтингу</a></li>
+         </ul>
+       </div>
+       <div class="result-button">
+         <span class="sort-top"></span>
+         <span class="sort-down"></span>
+       </div>
+     </section>
        <section class="catalog">
          <ul class="catalog-list">
            <li class="catalog-item">
@@ -51,7 +93,6 @@
                   <span class="rating-number">8.5</span>
                 </span>
              </div>
-
           </li>
           <li class="catalog-item">
              <div class="hotel-description">
