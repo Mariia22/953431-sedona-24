@@ -10,7 +10,7 @@
   <body>
     <header class="container main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Sedona">
         </a>
         <ul class="site-navigation">
@@ -27,43 +27,54 @@
         <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="filter-item">
             <h2>инфраструктура:</h2>
+            <input type="checkbox" id="basen" name="basen" checked>
             <label class="filter-check" for="basen">Бассейн</label>
-            <input type="checkbox" id="basen" name="basen">
-            <label class="filter-check" for="parking">Парковка</label>
             <input type="checkbox" id="parking" name="parking">
-            <label class="filter-check" for="wifi">Wifi</label>
+            <label class="filter-check" for="parking">Парковка</label>
             <input type="checkbox" id="wifi" name="wifi">
+            <label class="filter-check" for="wifi">Wifi</label>
           </div>
             <div class="filter-house">
               <h2>тип жилья:</h2>
+              <input type="checkbox" id="hotel" name="hotel" checked>
               <label class="filter-check" for="hotel">Гостиница</label>
-              <input type="checkbox" id="hotel" name="hotel">
+              <input type="checkbox" id="motel" name="motel" checked>
               <label class="filter-check" for="motel">Мотель</label>
-              <input type="checkbox" id="motel" name="motel">
+              <input type="checkbox" id="flat" name="flat" checked>
               <label class="filter-check" for="flat">Апартаменты</label>
-              <input type="checkbox" id="flat" name="flat">
             </div>
               <div class="filter-price">
-                <h2>стоимость в сутки (р):</h2>
-              <button type="button" id="filter-cena" class="button-filter-price" aria-label="Отобрать гостиницы по цене">Показать</button>
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-control">
+                  <label class="minprice">от<input type="text" name="minprice" value="0"></label>
+                  <label class="maxprice">до <input type="text" name="maxprice" value="3000"></label>
+                </div>
+                <div class="range">
+                  <div class ="scale">
+                    <div class = "bar"> </div>
+                  </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+              <button type="submit" id="filter-cena" class="button-filter-price">Показать</button>
             </div>
         </form>
        </section>
        <section class="result-filter">
-         <div class="result">
+         <div class="hotel-name result">
            <span>найдено: 3</span>
         </div>
         <div class="result-sort">
-         <span>Cортировка</span>
+         <span>Cортировка:</span>
          <ul class="sort">
-           <li><a class="active">по цене</a></li>
-           <li><a class="active">по типу</a></li>
-           <li><a class="active">по рейтингу</a></li>
+           <li class="sort-current"><a>по цене</a></li>
+           <li><a href="">по типу</a></li>
+           <li><a href="">по рейтингу</a></li>
          </ul>
        </div>
        <div class="result-button">
-         <span class="sort-top"></span>
-         <span class="sort-down"></span>
+         <a class="sort-top" href=""><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></a>
+         <a class="sort-down active" href=""><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></a>
        </div>
      </section>
        <section class="catalog">
@@ -77,8 +88,8 @@
              <span class="type-hotel">Гостиница</span>
              <span class="price">от 4000 Р.</span>
               <p class="info-hotel">
-                  <a class="info-button" href="">Подробнее</a>
-                  <a class="book-button" href="">Забронировать</a>
+                  <a class="info-button" href="#">Подробнее</a>
+                  <a class="book-button" href="#">Забронировать</a>
               </p>
               </div>
               </div>
@@ -99,12 +110,11 @@
             <img class="hotel-foto" src="img/hotel-2.jpg" width="135" height="90" alt="DESERT Quail INN">
              <div class="hotel-item">
             <a class="hotel-name" href="desert.html">desert quail inn</a>
-            <br>
             <span class="type-hotel">Мотель</span>
             <span class="price">от 3000 Р.</span>
             <p class="info-hotel">
-              <a class="info-button" href="">Подробнее</a>
-              <a class="book-button" href="">Забронировать</a>
+              <a class="info-button" href="#">Подробнее</a>
+              <a class="book-button" href="#">Забронировать</a>
             </p>
           </div>
              </div>
@@ -128,8 +138,8 @@
            <span class="type-hotel">Апартаменты</span>
            <span class="price">от 2000 Р.</span>
            <p class="info-hotel">
-             <a class="info-button" href="">Подробнее</a>
-             <a class="book-button" href="">Забронировать</a>
+             <a class="info-button" href="#">Подробнее</a>
+             <a class="book-button" href="#">Забронировать</a>
            </p>
          </div>
          </div>
@@ -150,16 +160,9 @@
        <div class="foot-container">
        <p class="teg-visit">#visitsedona</p>
        <ul class="social">
-         <li>
-           <a class="social-media social-media-tw" href="#"  aria-label="Ссылка на Twitter г. Седона">
-         </a>
-       </li>
-         <li><a class="social-media social-media-fb" href="#" aria-label="Ссылка на Facebook г.Седона">
-         </a>
-       </li>
-         <li><a class="social-media social-media-yb" href="#" aria-label="Ссылка на Youtube канал г.Седона ">
-         </a>
-       </li>
+         <li><a class="social-media social-media-tw" href="#"  aria-label="Ссылка на Twitter г. Седона"></a></li>
+         <li><a class="social-media social-media-fb" href="#" aria-label="Ссылка на Facebook г.Седона"> </a></li>
+         <li><a class="social-media social-media-yb" href="#" aria-label="Ссылка на Youtube канал г. Седона "></a></li>
        </ul>
        <p class="link-academy">
          <b>website by</b>
